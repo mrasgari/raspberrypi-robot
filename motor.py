@@ -68,11 +68,11 @@ try:
             GPIO.output(in2, GPIO.HIGH)
             GPIO.output(in3, GPIO.HIGH)
             GPIO.output(in4, GPIO.LOW)
-        elif char == curses.BUTTON_SHIFT:
+        elif char == ord('s'):
             print("high")
             p.ChangeDutyCycle(100)
             p2.ChangeDutyCycle(100)
-        elif char == curses.KEY_ENTER:
+        elif char == curses.KEY_BACKSPACE:
             print("stop")
             GPIO.output(in1, GPIO.LOW)
             GPIO.output(in2, GPIO.LOW)
