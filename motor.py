@@ -48,7 +48,7 @@ try:
             print("right")
             GPIO.output(in1, GPIO.LOW)
             GPIO.output(in2, GPIO.HIGH)
-            GPIO.output(in4, GPIO.HIGH)
+            GPIO.output(in4, GPIO.LOW)
             GPIO.output(in3, GPIO.LOW)
         elif char == curses.KEY_LEFT:
             print("left")
