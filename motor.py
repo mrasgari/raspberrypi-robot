@@ -46,16 +46,16 @@ try:
             break
         elif char == curses.KEY_RIGHT:
             print("right")
-            GPIO.output(in1, GPIO.LOW)
-            GPIO.output(in2, GPIO.HIGH)
+            GPIO.output(in1, GPIO.HIGH)
+            GPIO.output(in2, GPIO.LOW)
             GPIO.output(in4, GPIO.LOW)
             GPIO.output(in3, GPIO.LOW)
         elif char == curses.KEY_LEFT:
             print("left")
-            GPIO.output(in1, GPIO.HIGH)
+            GPIO.output(in1, GPIO.LOW)
             GPIO.output(in2, GPIO.LOW)
-            GPIO.output(in4, GPIO.LOW)
-            GPIO.output(in3, GPIO.HIGH)
+            GPIO.output(in4, GPIO.HIGH)
+            GPIO.output(in3, GPIO.LOW)
         elif char == curses.KEY_UP:
             print("forward")
             GPIO.output(in1, GPIO.HIGH)
